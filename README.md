@@ -1,2 +1,2 @@
 # software-quality
-Content from the Software Quality lectures
+Content from Software Quality lectures
