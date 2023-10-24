@@ -66,6 +66,4 @@ describe("Cenário de Testes para GlobalSQA", () => {
     return hours + minutes + seconds + milliseconds
   }
 
-
-
 })
