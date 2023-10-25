@@ -5,5 +5,4 @@ Content from Software Quality lectures
 ```
     cd lab
     npx cypress open
-
 ```
