@@ -1,3 +1,7 @@
-lab/cypress.config.js
-lab/package-lock.json
-lab/node_modules
+# Cypress files
+lab/ui_tests/cypress.config.js
+lab/ui_tests/package-lock.json
+lab/ui_tests/node_modules
+
+# Karate files
+lab/integration_tests/karate-archetype/target
