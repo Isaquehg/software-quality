@@ -1,4 +1,4 @@
-package starwars;
+package star_wars;
 
 import com.intuit.karate.junit5.Karate;
 

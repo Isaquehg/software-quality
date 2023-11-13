@@ -1,0 +1,4 @@
+{
+    "karateRunner.karateRunner.default": "lab/integration_tests/karate-archetype/src/test/java/star_wars/StarWarsRunner.java",
+    "karateRunner.core.environment": ""
+}

@@ -9,3 +9,4 @@ Scenario: Testar retorno da swapi, com request inválido https://swapi.dev/api/p
     Given url 'https://swapi.dev/api/planets/5802'
     When method get
     Then status 404
+    
