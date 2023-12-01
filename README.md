@@ -6,3 +6,9 @@ Content from Software Quality lectures
     cd lab
     npx cypress open
 ```
+
+### Running Karate
+```
+    cd java_project_name
+    mvn test -Dtest=ClassRunner
+```
