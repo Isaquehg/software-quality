@@ -9,6 +9,6 @@ Content from Software Quality lectures
 
 ### Running Karate
 ```
-    cd java_project_name
+    cd your_java_project
     mvn test -Dtest=ClassRunner
 ```

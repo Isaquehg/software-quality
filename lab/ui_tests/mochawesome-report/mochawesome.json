@@ -1,0 +1,138 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-12-02T19:35:48.723Z",
+    "end": "2023-12-02T19:36:13.676Z",
+    "duration": 24953,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c133e10b-d919-4da6-b83a-8b237f5682ea",
+      "title": "",
+      "fullFile": "cypress/e2e/demo_blaze.cy.js",
+      "file": "cypress/e2e/demo_blaze.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4b4874bb-2a90-422b-91c8-c6f43c93cd02",
+          "title": "teste de UI em DemoBlaze.com",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "add product to cart",
+              "fullTitle": "teste de UI em DemoBlaze.com add product to cart",
+              "timedOut": null,
+              "duration": 17927,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.demoblaze.com/index.html');\nregister_and_login();\ncy.wait(2000);\ncy.get(':nth-child(5) > .card > .card-block > .card-title > .hrefch').click();\ncy.get('.name').should('contain.text', 'Iphone');\ncy.get('.col-sm-12 > .btn').click();\ncy.wait(500);\ncy.get('#cartur').click();\ncy.wait(2000);\ncy.get('.success > td').should('contain.text', 'Iphone');",
+              "err": {},
+              "uuid": "5897b4cf-a63a-435d-8d29-6dc5472641e6",
+              "parentUUID": "4b4874bb-2a90-422b-91c8-c6f43c93cd02",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verifiy if the correct product is selected",
+              "fullTitle": "teste de UI em DemoBlaze.com verifiy if the correct product is selected",
+              "timedOut": null,
+              "duration": 1861,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.demoblaze.com/index.html');\ncy.get(':nth-child(5) > .card > .card-block > .card-title > .hrefch').click();\ncy.get('.name').should('contain.text', 'Iphone');",
+              "err": {},
+              "uuid": "e171f4d6-3ff1-4a8e-ac5c-7b0af98595f9",
+              "parentUUID": "4b4874bb-2a90-422b-91c8-c6f43c93cd02",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify if the app blocks not registered users to log in",
+              "fullTitle": "teste de UI em DemoBlaze.com verify if the app blocks not registered users to log in",
+              "timedOut": null,
+              "duration": 1731,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.demoblaze.com/index.html');\ncy.get('#login2').click();\ncy.wait(300);\ncy.get('#loginusername').type(\"THIS USERNAME DOESN'T EXIST!\");\ncy.get('#loginpassword').type(\"THIS PASSWORD DOESN'T EXIST!\");\ncy.get('#logInModal > .modal-dialog > .modal-content > .modal-footer > .btn-primary').click();\ncy.on('window:alert', alertText => {\n  expect(alertText).to.contain('User does not exist.');\n});",
+              "err": {},
+              "uuid": "85cefe88-460a-47f5-b830-e7f0e7d9c771",
+              "parentUUID": "4b4874bb-2a90-422b-91c8-c6f43c93cd02",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5897b4cf-a63a-435d-8d29-6dc5472641e6",
+            "e171f4d6-3ff1-4a8e-ac5c-7b0af98595f9",
+            "85cefe88-460a-47f5-b830-e7f0e7d9c771"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 21519,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
